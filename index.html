@@ -7,19 +7,28 @@
     <!-- Using bootstrap 5 framework -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- jQuery used to load the navbar -->
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
      <!-- This is how to add the Bootstrap Stylesheet-->
 </head>
 <body>
+    <div id="nav-placeholder"></div>
 <div class="container-fluid">
-  <!-- This a fluid container-->
+   <!-- This a fluid container-->
+     <h1>Test Nav</h1>
+   </div>
   <h1>Formula One</h1>
-  
+
   <img src="images/redbullminiorimage.jpg" class="rounded-circle" alt="Red Bull Car on Track with a Minior Reflection in a Plane" width="1000px" height="900px">
   <p>This is my first web page using version control with Git and GitHub.</p>
   <p> I am learning to edit and version websites using VS Code, Git, and GitHub.</p>
   <div class="alert alert-warning" role="alert">
     This is a warning alert!
   </div>
-</div>  
+</div>
+ <script>
+       // Load only the #site-nav element from navbar.html
+       $("#nav-placeholder").load("navbar.html #site-nav");
+   </script>
   </body>
 </html>

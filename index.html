@@ -12,31 +12,32 @@
     <!-- This is how to add the Bootstrap Stylesheet-->
   </head>
   <body>
+    <a class="visually-hidden-focusable" href="#main-content"> Skip to main content </a>
     <div id="nav-placeholder"></div>
-
-    <div class="container-fluid">
-      <!-- This a fluid container-->
+    <main class="container-fluid" id="main-content">
       <h1>Formula One</h1>
 
       <!-- These are how to add links-->
-      <a href="https://www.formula1.com" target="_blank">Formula One</a>
-      <a href="https://youtube.com/@F1" target="_blank">Formula One YouTube</a>
+      <a class="d-block mb-2" href="https://www.formula1.com" target="_blank">Formula One<span class="visually-hidden"></span></a>
+      <a class="d-block mb-2" href="https://youtube.com/@F1" target="_blank">Formula One YouTube<span class="visually-hidden"></span></a>
 
       <!-- This is how to add an image-->
-      <img src="images/redbullminiorimage.jpg" class="rounded-circle img-fluid" alt="Red Bull Car on Track with a Minior Reflection in a Plane">
-      <img src="images/redbullredfire.jpg" class="img-thumbnail img-fluid" alt="Cartoon Red Bull Car with High Red Accents">
+      <img src="images/redbullminiorimage.jpg" class="rounded-circle img-fluid mb-3" alt="Red Bull Formula 1 Car on track with a minior reflections">
+      <img src="images/redbullredfire.jpg" class="img-thumbnail img-fluid mb-3" alt="Illustration of a Red Bull car with red and dark blue acents">">
 
       <h2>What is Formula One</h2>
       <p>Formula One is the highest class of international auto racing in the world.</p>
+      
+      <!-- This is how an accordion list group works-->
 
       <h2>2026 Constructor Standings</h2>
       <div class="accordion" id="accordionConstructors">
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button"
               data-bs-toggle="collapse" data-bs-target="#collapseConstructors"
               aria-expanded="false" aria-controls="collapseConstructors">
-              Collapsible list group
+              Constructor (Team) Standings 
             </button>
           </h2>
           <div id="collapseConstructors" class="accordion-collapse collapse"
@@ -63,11 +64,11 @@
       <h2>2026 Driver Standings</h2>
       <div class="accordion" id="accordionDrivers">
         <div class="accordion-item">
-          <h2 class="accordion-header">
+          <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button"
               data-bs-toggle="collapse" data-bs-target="#collapseDrivers"
               aria-expanded="false" aria-controls="collapseDrivers">
-              Collapsible list group
+              Driver Standings
             </button>
           </h2>
           <div id="collapseDrivers" class="accordion-collapse collapse"
